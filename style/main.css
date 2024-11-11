@@ -34,6 +34,7 @@ body {
 }
 
 .container > div {
+  top: 30vh; /* Adjusted from 15vh */
   left: 0;
   position: absolute;
   right: 0;
@@ -120,7 +121,7 @@ body {
 /* Profile Section */
 .six {
   position: relative;
-  top: 15vh; /* Increased from 5vh to 15vh */
+  top: 12vh; /* Increased from 5vh to 15vh */
   z-index: 1;
   padding: 0 20px;
 }
