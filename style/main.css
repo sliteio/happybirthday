@@ -137,7 +137,7 @@ body {
   left: 50%;
   position: absolute;
   transform: translateX(-50%);
-  top: 3%;
+  top: 2%;
   width: min(100px, 100%);
 }
 
