@@ -34,11 +34,10 @@ body {
 }
 
 .container > div {
-  top: 30vh; /* Adjusted from 15vh */
   left: 0;
   position: absolute;
   right: 0;
-  top: 35vh; /* Adjusted from 20vh to 35vh to move content down */
+  top: 50vh; /* Adjusted from 20vh to 35vh to move content down */
 }
 
 /* Text Sizing */
@@ -121,7 +120,7 @@ body {
 /* Profile Section */
 .six {
   position: relative;
-  top: 12vh; /* Increased from 5vh to 15vh */
+  top: 30vh; /* Increased from 5vh to 15vh */
   z-index: 1;
   padding: 0 20px;
 }
