@@ -1,0 +1,301 @@
+:root {
+  --primary-color: #ffd1dc;      /* Soft pink background */
+  --secondary-color: #db7093;    /* Deeper pink for main text */
+  --tertiary-color: #ff99ac;     /* Medium pink for secondary text */
+  --quaternary-color: #ff8da1;   /* Coral pink for accents */
+  --quinary-color: #ffb6c1;      /* Light pink for borders */
+  --senary-color: #ffebf2;       /* Very light pink for box backgrounds */
+  --septenary-color: #db7093;    /* Pale violet red for highlights */
+  --octonary-color: #fff0f5;     /* Lavender blush for subtle elements */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: var(--primary-color);
+}
+
+.song {
+  visibility: hidden;
+}
+
+.container {
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  visibility: hidden;
+  width: 100vw;
+}
+
+.container > div {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 35vh; /* Adjusted from 20vh to 35vh to move content down */
+}
+
+/* Text Sizing */
+.one {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  color: var(--secondary-color);
+}
+
+.two {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: lighter;
+  color: var(--secondary-color);
+  margin-top: 2rem; /* Added margin to move greeting text down */
+}
+
+.three {
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--quaternary-color);
+  margin-top: 4rem; /* Added margin to move birthday text down */
+}
+
+/* Text Box */
+.four .text-box {
+  border: 3px solid var(--secondary-color);
+  border-radius: 5px;
+  margin: 5rem auto 0; /* Increased top margin */
+  padding: 10px;
+  position: relative;
+  width: min(90%, 600px);
+  font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.text-box p {
+  margin: 0;
+  text-align: left;
+}
+
+.text-box span {
+  visibility: hidden;
+}
+
+.text-box .fake-btn {
+  background-color: var(--secondary-color);
+  border-radius: 3px;
+  bottom: -50px;
+  color: #fff;
+  padding: .5rem 1rem;
+  position: absolute;
+  right: 5px;
+}
+
+/* Idea Text */
+.five p {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.idea-3 strong {
+  border-radius: 3px;
+  display: inline-block;
+  padding: 3px 5px;
+  background-color: var(--septenary-color);
+}
+
+.five .idea-5 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--secondary-color);
+}
+
+.idea-5 span, .idea-6 span, .wish-hbd span {
+  display: inline-block;
+}
+
+.idea-6 span {
+  font-size: clamp(8rem, 15vw, 15rem);
+}
+
+/* Profile Section */
+.six {
+  position: relative;
+  top: 15vh; /* Increased from 5vh to 15vh */
+  z-index: 1;
+  padding: 0 20px;
+}
+
+.six img {
+  display: inline-block;
+  height: auto;
+  max-width: min(100%, 350px);
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.six .hat {
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  top: 3%;
+  width: min(100px, 100%);
+}
+
+/* Balloons */
+.baloons img {
+  display: inline-block;
+  position: absolute;
+  width: min(150px, 30vw);
+  height: auto;
+}
+
+.baloons img:nth-child(even) {
+  left: -10%;
+}
+
+.baloons img:nth-child(odd) {
+  right: -10%;
+}
+
+.baloons img:nth-child(3n + 0) {
+  left: 30%;
+}
+
+/* Seven and Eight Sections */
+.seven, .eight {
+  height: 100vh;
+  position: fixed;
+  top: 20vh; /* Moved down from 0 to 20vh */
+  width: 100vw;
+}
+
+.eight svg {
+  left: 0;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: clamp(15px, 5vw, 25px);
+  z-index: -1;
+}
+
+/* SVG Positioning - Adjusted all top positions down */
+.eight svg:nth-child(1) {
+  fill: var(--quaternary-color);
+  left: 5vw;
+  top: 27vh; /* Increased from 7vh */
+}
+
+.eight svg:nth-child(2) {
+  fill: var(--tertiary-color);
+  left: 35vw;
+  top: 43vh; /* Increased from 23vh */
+}
+
+.eight svg:nth-child(3) {
+  fill: var(--secondary-color);
+  left: 23vw;
+  top: 53vh; /* Increased from 33vh */
+}
+
+.eight svg:nth-child(4) {
+  fill: var(--primary-color);
+  left: 57vw;
+  top: 63vh; /* Increased from 43vh */
+}
+
+.eight svg:nth-child(5) {
+  fill: var(--quinary-color);
+  left: 7vw;
+  top: 88vh; /* Increased from 68vh */
+}
+
+.eight svg:nth-child(6) {
+  fill: var(--senary-color);
+  left: 77vw;
+  top: 62vh; /* Increased from 42vh */
+}
+
+.eight svg:nth-child(7) {
+  fill: var(--septenary-color);
+  left: 83vw;
+  top: 88vh; /* Increased from 68vh */
+}
+
+.eight svg:nth-child(8) {
+  fill: var(--octonary-color);
+  left: 37vw;
+  top: 96vh; /* Increased from 86vh */
+}
+
+.eight svg:nth-child(9) {
+  fill: var(--tertiary-color);
+  left: 87vw;
+  top: 94vh;
+}
+
+/* Birthday Message */
+.wish-hbd {
+  font-size: clamp(2rem, 4vw, 3em);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.wish h5 {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: lighter;
+  margin: 10px 0 0;
+}
+
+.nine p {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: lighter;
+}
+
+#replay {
+  cursor: pointer;
+  z-index: 3;
+}
+
+/* Media Queries for Extra Small Devices */
+@media screen and (max-width: 480px) {
+  .container > div {
+    top: 25vh; /* Adjusted from 10vh */
+  }
+  
+  .six {
+    top: 10vh; /* Adjusted from 0 */
+  }
+  
+  .text-box .fake-btn {
+    bottom: -40px;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .idea-5 span, .idea-6 span {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* Media Queries for Small Devices */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container > div {
+    top: 30vh; /* Adjusted from 15vh */
+  }
+  
+  .six {
+    top: 12vh; /* Adjusted from 2vh */
+  }
+}
+
+/* Media Queries for Height */
+@media screen and (max-height: 650px) {
+  .container > div {
+    top: 25vh; /* Adjusted from 10vh */
+  }
+  
+  .six {
+    top: 10vh; /* Adjusted from 0 */
+  }
+}
